@@ -1,0 +1,21 @@
+  394  mkdir git-majonez
+  395  cd git-majonez
+  396  git init
+  397  touch main.cpp
+  400  git commit -m "Initial commit"
+  403  git commit -m "Farewell changed"
+  404  git remote add origin git@github.com:dsecop/git-majonez.git
+  405  git push -u origin main
+  406  git checkout -b cs
+  407  git reset --hard HEAD^
+  410  git commit -m "Greetings"
+  411  git log
+  412  git push origin cs
+  413  git checkout main
+  414  git merge cs
+  415  vim main.cpp
+  416  git add main.cpp
+  417  git commit -m "Merge branch 'cs'"
+  418  git log --graph
+  419  history
+  420  history 394 > history.txt
